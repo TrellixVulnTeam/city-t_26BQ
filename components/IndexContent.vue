@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <div class="header">
           <CityHeader />
-      </div>
       <section class="main-section">
           <div class="leed">
               <h1>Подключите высокоскоростной интернет от Сити-Телеком</h1>
@@ -29,7 +27,7 @@
               <p>16/5</p>
               <img src="@/assets/img/arrow-down.svg">
             </div>
-            <button>Проверить</button>
+            <nuxt-link tag="button" to="/leed">Проверить</nuxt-link>
           </div>
       </section>
       <section class="about">
@@ -126,12 +124,6 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-
-    .header{
-      width: 100%;
-      height: 60px;
-      padding-top: 20px;
-    }
 
     .footer{
       width: 100%;
@@ -436,7 +428,7 @@
           flex-direction: column;
           justify-content: center !important;
           align-items: center !important;
-          padding-top: 50px !important;
+          padding-top: 100px !important;
           width: 95% !important;
 
 
